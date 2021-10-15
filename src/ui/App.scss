@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+#main-header {
+    width: 100%;
+    background-color: #a8dadc;
+
+    > div {
+        height: 10vh;
+        width: 1200px;
+        margin: 0 auto;
+        // justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        div {
+            &:last-of-type {
+                flex-direction: row;
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 20px;
+            list-style: none;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
