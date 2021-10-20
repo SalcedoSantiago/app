@@ -1,84 +1,66 @@
-body {
-    margin: 0;
-}
-
-main {
-    width: 1200px;
-    margin: 0 auto;
-    height: 80vh;
-}
+$colorDark: #353535;
+$colorPri: #3c6e71;
+$colorWhite: #ffffff;
+$colorTer: #d9d9d9;
+$colorSec: #284b63;
 
 #main-header {
-    width: 100%;
-    background-color: #a8dadc;
+    padding: 1rem 0;
+    background-color: #457b9d;
+    color: #fff;
 
-    > div {
-        width: 1200px;
-        margin: 0 auto;
-        // justify-content: space-between;
+    .content {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-
-        div {
-            &:last-of-type {
-                flex-direction: row;
-                flex: 1;
-                display: flex;
-                justify-content: flex-end;
-            }
-        }
     }
 
     .navigation {
-        .nav-links {
-            .nav-link {
-                padding: 8px 18px;
-                border: 2px solid #457b9d;
-                color: #457b9d;
-                font-weight: 500;
-                font-size: 18px;
-                border-radius: 6px;
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: #457b9d;
-                    color: #fff;
-                }
-
-                &.active {
-                    background-color: #457b9d;
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-
-    ul {
         display: flex;
         align-items: center;
 
-        li {
-            margin-right: 20px;
-            list-style: none;
+        .nav-links {
+            display: flex;
+            align-items: center;
+            margin: 0;
 
-            &:last-of-type {
-                margin-right: 0;
+            .nav-link {
+                color: #fff;
+                font-weight: 500;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #1d3557;
+                }
             }
         }
     }
 }
 
-#footer {
-    display: flex;
-    margin: 0 auto;
-    background-color: #a8dadc;
+main {
+    height: 80vh;
+}
 
-    div {
-        width: 50%;
+#footer {
+    padding: 1rem 0;
+    background-color: #457b9d;
+    color: #fff;
+
+    .navigation {
+        .nav-links {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            .nav-link {
+                color: #fff;
+                font-weight: 500;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #1d3557;
+                }
+            }
+        }
     }
 }

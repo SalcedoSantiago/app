@@ -2,9 +2,8 @@
 
 const Nav = () => {
 
-
     return (
-        <nav  className="navigation">
+        <nav className="navigation ">
             <ul className="nav-links">
                 <li className="nav-link active">Home</li>
                 <li className="nav-link">Store</li>
