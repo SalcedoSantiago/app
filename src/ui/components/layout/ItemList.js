@@ -6,7 +6,6 @@ export const ItemList = () => {
 
     return (
         <div className="products">
-            <h2>Productos</h2>
 
 
 

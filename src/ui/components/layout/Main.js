@@ -11,6 +11,12 @@ const Main = () => {
     return (
         <main className="container">
 
+            <div className="products">
+                <h2>Productos</h2>
+                <ItemList></ItemList>
+            </div>
+
+
             <div className="counter">
                 <p>{count}</p>
                 <div className="counter-actions">
