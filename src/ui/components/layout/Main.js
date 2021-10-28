@@ -1,3 +1,4 @@
+import { ItemList } from "./ItemList";
 
 
 
@@ -5,7 +6,9 @@
 const Main = () => {
     return (
         <main className="container">
-            <h1>Hola mundo!!</h1>
+            <div className="container">
+                <ItemList></ItemList>
+            </div>
         </main>
     )
 }
