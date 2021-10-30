@@ -3,12 +3,13 @@
 
     .container-flex {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: flex-start;
 
         .product {
             background: #000000de;
-            width: 30%;
+            width: calc(25% - 1rem);
+            margin-right: 1rem;
             margin-bottom: 30px;
             color: white;
             padding: 10px;
@@ -18,8 +19,8 @@
         .stock {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
             .counter {
                 width: 100%;
