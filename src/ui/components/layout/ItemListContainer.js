@@ -21,7 +21,7 @@ export const ItemListContainer = () => {
             setTimeout(() => {
                 setProducts(dataJson);
                 setLoad(false)
-            }, 0);
+            }, 1000);
         }).catch(() => {
             console.log('Error');
         })
