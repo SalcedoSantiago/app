@@ -1,0 +1,38 @@
+.products {
+    .container-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 3px;
+            width: 30%;
+            margin-bottom: 30px;
+        }
+
+        .stock {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .counter {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .count {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

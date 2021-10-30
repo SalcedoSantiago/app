@@ -1,11 +1,7 @@
-import { ItemList } from "./ItemList";
-
-import { useState } from 'react'
+import { ItemListContainer } from "./ItemListContainer";
 
 
 const Main = () => {
-
-    const [count, setCount] = useState(0)
 
 
     return (
@@ -13,17 +9,11 @@ const Main = () => {
 
             <div className="products">
                 <h2>Productos</h2>
-                <ItemList></ItemList>
+                <ItemListContainer />
             </div>
 
 
-            <div className="counter">
-                <p>{count}</p>
-                <div className="counter-actions">
-                    <button className="btn btn-danger" onClick={() => { setCount(count - 1) }}>-</button>
-                    <button className="btn btn-success" onClick={() => { setCount(count + 1) }}>+</button>
-                </div>
-            </div>
+        
 
 
         </main>

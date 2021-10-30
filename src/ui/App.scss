@@ -32,28 +32,7 @@
 }
 
 main {
-    height: 80vh;
-
-    .counter {
-        padding-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        p {
-            font-size: 40px;
-            width: 100%;
-            text-align: center;
-        }
-
-        &-actions {
-            display: flex;
-
-            button {
-                padding: 5px 20px;
-                font-size: 20px;
-            }
-        }
-    }
+    min-height: 80vh;
 }
 
 #footer {
@@ -61,6 +40,9 @@ main {
     background-color: #457b9d;
     color: #fff;
 
+    p {
+        text-align: left;
+    }
     .navigation {
         .nav-links {
             display: flex;
