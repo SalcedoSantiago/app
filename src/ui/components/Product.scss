@@ -1,14 +1,18 @@
 .products {
+    padding: 30px 0;
+
     .container-flex {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
         .product {
-            border: 1px solid #ccc;
-            padding: 3px;
+            background: #000000de;
             width: 30%;
             margin-bottom: 30px;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .stock {
