@@ -3,7 +3,6 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
 
-  alert(children)
   return (
     <>
       <Navbar />

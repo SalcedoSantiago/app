@@ -9,11 +9,14 @@ const App = () => {
   return (
     <Router>
       <Layout>
-        <Route path="/" component={ItemListContainer} exact />
-        {/* <Route path="/category/:id" component={ItemListContainer} /> */}
-        <Route path="/product/:id" component={SingleProduct} />
+        <Routes>
+          <Route path="/" component={ItemListContainer}  />
+          {/* <Route path="/category/:id" component={ItemListContainer} /> */}
+          <Route path="/product/:id" component={SingleProduct} exact />
+        </Routes>
       </Layout>
-    </Router>
+
+    </Router >
   )
 
 }

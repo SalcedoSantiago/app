@@ -21,7 +21,7 @@ const SingleProduct = () => {
 
   return (
     <div className="">
-      <h1> Produc</h1>
+      <h1> Productttt</h1>
     </div>
   );
 };
