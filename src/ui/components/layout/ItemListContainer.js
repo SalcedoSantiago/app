@@ -8,8 +8,6 @@ export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [load, setLoad] = useState(false);
 
-
-
     const promise = new Promise((res, rej) => {
         res(dataJson)
     })
