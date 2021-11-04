@@ -27,7 +27,7 @@ export const ItemListContainer = () => {
 
 
     return (
-        <div class="container-flex">
+        <div className="container-flex">
             {load ?
                 (
                     <Spinner />

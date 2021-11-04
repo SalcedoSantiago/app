@@ -10,12 +10,13 @@ const App = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" component={<ItemListContainer />} exact />
-          {/* <Route path="/category/:id" component={ItemListContainer} /> */}
-          {/* <Route path="/product/:id" component={SingleProduct} exact /> */}
+          <Route path="/" element={<ItemListContainer />}></Route>
+          <Route path="/product/:id" element={<SingleProduct />}>  </Route>
+
         </Routes>
+
       </Layout>
-    </Router >
+    </Router>
   )
 
 }

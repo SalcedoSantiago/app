@@ -21,9 +21,9 @@ export const Product = ({ data }) => {
 
 
     return (
-        <div class="product">
+        <div className="product">
             <Link to={`/product/${id}`}>
-                <img loading="lazy" class="img-thumbnail" src={img} alt={title} />
+                <img loading="lazy" className="img-thumbnail" src={img} alt={title} />
                 <div>
                     <h5>{title}</h5>
                     <p>{description}</p>
