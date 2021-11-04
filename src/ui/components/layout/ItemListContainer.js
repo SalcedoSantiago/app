@@ -27,18 +27,20 @@ export const ItemListContainer = () => {
 
 
     return (
-        <div className="container-flex">
-            {load ?
-                (
-                    <Spinner />
-                ) :
-                products.map((product, index) => (
-                    <Product
-                        data={product}
-                        key={index}
-                    />
-                ))
-            }
+        <div className="products">
+            <div className="container-flex">
+                {load ?
+                    (
+                        <Spinner />
+                    ) :
+                    products.map((product, index) => (
+                        <Product
+                            data={product}
+                            key={index}
+                        />
+                    ))
+                }
+            </div>
         </div>
     )
 }

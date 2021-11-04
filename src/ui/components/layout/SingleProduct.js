@@ -5,7 +5,6 @@ import { dataJson } from "../api/navigation";
 import './SingleProduct.scss'
 
 const SingleProduct = () => {
-
   const [product, setProduct] = useState([]);
   const [load, setLoad] = useState(false);
   const { id } = useParams();
@@ -49,22 +48,25 @@ const SingleProduct = () => {
         ) :
         (
 
-          <div className="product-sigle">
-            <img loading="lazy" className="img-thumbnail" src={`.${product.img}`} alt={product.title} />
+          <div className="product-single">
             <div>
-              <h5>{product.title}</h5>
-              <p>{product.description}</p>
+              <img loading="lazy" className="img-thumbnail" src={`.${product.img}`} alt={product.title} />
             </div>
-            <div className="stock">
-              <p>Stock: {product.stock}</p>
-              <div className="counter">
-                <p>{product.count}</p>
-                <div className="count">
-                  <button className="btn btn-danger" onClick={() => { removeProductCart() }}>-</button>
-                  <button className="btn  btn-success" onClick={() => { addProductCart() }}>+</button>
+            <div>
+              <div>
+                <h5>{product.title}</h5>
+                <p>{product.description}</p>
+              </div>
+              <div className="stock">
+                <p>Stock: {product.stock}</p>
+                <div className="counter">
+                  <p>{count}</p>
+                  <div className="count">
+                    <button className="btn btn-danger" onClick={() => { removeProductCart() }}>-</button>
+                    <button className="btn  btn-success" onClick={() => { addProductCart() }}>+</button>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         )

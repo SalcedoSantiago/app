@@ -1,8 +1,9 @@
-.product-sigle {
+.product-single {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
 
-
-
-
-
-    
+    > div {
+        width: calc(50% - 1rem);
+    }
 }
