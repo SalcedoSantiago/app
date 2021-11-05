@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Spinner } from '../utils/Spinner'
 import { dataJson } from "../api/navigation";
 import { Product } from './Product'
-
 import './SingleProduct.scss'
 
 const SingleProduct = () => {
@@ -19,7 +18,7 @@ const SingleProduct = () => {
     promise.then((dataJson) => {
       setTimeout(() => {
         let productActual = dataJson.filter((product) => product.id === parseInt(id))[0];
-        setProduct(productActual)
+        setProduct({ productActual, img: `.${productActual.img}` })
         setLoad(false)
       }, 1000);
     }).catch(() => {
