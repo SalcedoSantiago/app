@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { dataJson } from "../api/navigation";
 import { Product } from './Product'
 import { Spinner } from '../utils/Spinner'
+import { Link } from "react-router-dom";
 import '../Product.scss'
 
 export const ItemListContainer = () => {
@@ -34,10 +35,13 @@ export const ItemListContainer = () => {
                         <Spinner />
                     ) :
                     products.map((product, index) => (
-                        <Product
-                            data={product}
-                            key={index}
-                        />
+                        <Link className="link_product" to={`/product/${product.id}`}>
+                            <Product
+                                data={product}
+                                key={index}
+                            />
+                        </Link >
+
                     ))
                 }
             </div>

@@ -4,14 +4,18 @@ const Navbar = () => {
     return (
         <header id="main-header">
             <div className="content container">
-                <div className="logo">
-                    <h2>E-commerce</h2>
-                </div>
+                <Link to="/">
+                    <div className="logo">
+                        <h2>E-commerce</h2>
+                    </div>
+                </Link>
                 <nav className="navigation ">
                     <ul className="nav-links">
-                        <Link to="/">Home</Link>
-                        <li className="nav-link">Store</li>
+                        <Link to="/">
+                            <li className="nav-link">Home</li>
+                        </Link>
                         <li className="nav-link">About</li>
+                        <li className="nav-link">Store</li>
                         <li className="nav-link">Contact</li>
                     </ul>
                 </nav>
