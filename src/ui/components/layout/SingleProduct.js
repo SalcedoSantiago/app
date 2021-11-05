@@ -17,7 +17,7 @@ const SingleProduct = () => {
 
     promise.then((dataJson) => {
       setTimeout(() => {
-        let productActual = dataJson.filter((product) => product.id == parseInt(id))[0];
+        let productActual = dataJson.filter((product) => product.id === parseInt(id))[0];
         setProduct(productActual)
         setLoad(false)
       }, 1000);

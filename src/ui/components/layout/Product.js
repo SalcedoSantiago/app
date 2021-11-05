@@ -19,7 +19,6 @@ export const Product = ({ data }) => {
         }
     }
 
-
     return (
             <div className="product">
                 <Link to={`/product/${id}`}>
@@ -28,6 +27,7 @@ export const Product = ({ data }) => {
                         <h5>{title}</h5>
                         <p>{description}</p>
                     </div>
+                </Link>
                     <div className="stock">
                         <p>Stock: {stock}</p>
                         <div className="counter">
@@ -39,7 +39,6 @@ export const Product = ({ data }) => {
                         </div>
 
                     </div>
-                </Link>
             </div >
     )
 }
