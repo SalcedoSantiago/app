@@ -18,7 +18,8 @@ const SingleProduct = () => {
     promise.then((dataJson) => {
       setTimeout(() => {
         let productActual = dataJson.filter((product) => product.id === parseInt(id))[0];
-        setProduct({ productActual, img: `.${productActual.img}` })
+        productActual.img = `.${productActual.img}`
+        setProduct(productActual)
         setLoad(false)
       }, 1000);
     }).catch(() => {
